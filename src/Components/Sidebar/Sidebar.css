@@ -1,0 +1,98 @@
+.sidebar{
+    width: 15%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    padding-left: 2%;
+    padding-top: 80px;
+    background-color: rgb(255, 255, 255);
+    hr{
+        height: 1px;
+        border: 0;
+        width: 85%;
+        background-color: #ccc;
+    }
+    .sideLinks{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+        width: fit-content;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+    .shortcutLinks{
+        img{
+            width: 20px;
+        }
+    }
+
+    .subscribeLink{
+        h3{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        img{
+            width: 25px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.smallSidebar{
+    width: 5%;
+    p,h3{
+        display: none;
+    }
+    hr{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+}
+.activ{
+    p{
+        color: red;
+    }
+    img{
+        border-bottom: 3px solid red;
+        padding-bottom: 3px;
+    }
+}
+
+
+/* media query */
+
+@media  screen and (max-width: 992px){
+    
+    .sidebar{
+        overflow-y: scroll;
+    .shortcutLinks{
+        img{
+            width: 15px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+
+    .subscribeLink{
+        h3{
+            font-size: 14px;
+        }
+        img{
+            width: 20px;
+        }
+        p{
+            font-size: 10px;
+            font-weight: bold;
+        }
+    }
+}
+}
+
+@media  screen and (max-width: 768px){
+    .sidebar{
+        display: none;
+    }
+}
